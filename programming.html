@@ -1,0 +1,224 @@
+<!-- NAME: Michael Pressel
+	 PROG PURPOSE:
+	 This webpage defines programming terminology.
+-->
+<html lang = "en">
+<head>
+	<title>Programming Terminology</title>
+	<style>
+	table {
+	margin-left:auto;
+	margin-right:auto;
+    text-align: left;
+    background-color: #DF9A57;
+    width: 900;
+	}
+	
+	tr, td, th {
+	padding: 4px;
+	font-size: 110%;
+	}
+	
+	tr:nth-child(even) {background-color: #E5AD76;}
+	</style>
+</head>
+<body style = "color: #5E5B52; background-color: #FCD757; font-family: arial;">
+
+<table border="3">
+	<tr style = "font-weight: bold; font-size: 200%;">
+		<th colspan = "2" style="text-align: center;">Chapter 5: Programming Algorithms & Software Testing</th>
+	</tr>
+    <tr style = "font-weight: bold; font-size: 200%;">
+		<th colspan = "2">Phases of computer program development</th>
+	</tr>
+	<tr style = "font-weight: bold; font-size: 120%;">
+		<th>Phase 1:</th>
+		<td>Understand the problem</td>
+	</tr>
+	<tr>
+		<th>Phase 2:</th>
+		<td>Design an algorithm to solve the problem</td> <!--Define here!-->
+	</tr>
+	<tr>
+		<th>Phase 3:</th>
+		<td>Write the program in appropriate language based on the algorithm.</td> <!--Define here!-->
+	</tr>
+	<tr>
+		<th>Phase 4:</th>
+		<td>Enter the program and save</td> <!--Define here!-->
+	</tr>
+	<tr>
+		<th>Phase 5:</th>
+		<td>Execute the program</td> <!--Define here!-->
+	</tr>
+	<tr>
+		<th>Phase 6:</th>
+		<td>Test the program, find errors and debug, then retest</td> <!--Define here!-->
+	</tr>
+	<tr>
+		<th>Phase 7:</td>
+		<td>Document and evaluate the program</td> <!--Define here!-->
+	</tr>
+
+    <tr style = "font-weight: bold; font-size: 200%;">
+		<th colspan = "2">Programming structures:</th>
+	</tr>
+	<tr>
+		<th>Sequential structure:</th>
+		<td>Top-down execution</td> <!--Define here!-->
+	<tr>
+		<th>Decision structures:</th>
+		<td>if / then / else</td> <!--Define here!-->
+	</tr>
+	<tr>
+		<th>Iterative (Looping):</th>
+		<td>
+            <ul>
+                <li>while loop</li>
+                <ul>
+                    <li>continue looping as long as something is true</li>
+                <br>
+                </ul>
+                <li>repeat/until loop</li>
+                <ul>
+                    <li>continue looping until something is true</li>
+                <br>
+                </ul>
+                <li>for loop</li>
+                <ul>
+                    <li>loop a given number of times</li>
+                </ul>
+            </ul>
+        </td> <!--Define here!-->
+	</tr>
+    <th>Recursive Structure:</th>
+    <td>
+        <ul>
+            <li>Repeat a set of instructions as a subtask of itself</li>
+            <li>Repetition continues until:</li>
+            <ul>
+                <li>degenerative case, which is a termination condition, is met</li>
+                <li>(degenerative case is also called a "base case")</li>
+            </ul>
+        </ul>
+    </td>
+    <tr style = "font-weight: bold; font-size: 200%;">
+		<th colspan = "2">Two classic programming/database problems</th>
+	</tr>
+    <tr>
+        <th>Sorting: Descending order / Ascending order</th>
+        <td>
+            <ul>
+                <li>Sorting numbers</li>
+                <li>Sorting strings (In accordance with ASCII values)</li>   
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <th>Searching: find specific data that meet a certain criteria</th>
+        <td>
+            <ul>
+                <li>In database:</li>
+                <ul>
+                <li>Filters: temporary search</li>
+                <li>Queries: search criteria are saved so they don't have to be recreated</li>  
+                </ul> 
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <th>Two popular search techniques:</th>
+        <td>
+            <ul>
+                <li>Sequential search: search from top to bottom or bottom to top, one item at a time</li>
+                <li>Binary search:</li>
+                <ul>
+                <li>only works if data is SORTED first</li>
+                <li>start in the middle, then go to half of that, etc.</li>  
+                </ul> 
+            </ul>
+        </td>
+    </tr>
+    <tr style = "font-weight: bold; font-size: 200%;">
+		<th colspan = "2">Two classic program goals</th>
+	</tr>
+    <tr>
+    <th>Efficiency:</th>
+    <td>Program takes minimal time and/or resources</td>
+    </tr>
+    <tr>
+        <th>Correctness:</th>
+        <td>Program runs in expected ways and works for all expected conditions</td>
+    </tr>
+
+    <tr style = "font-weight: bold; font-size: 200%;">
+		<th colspan = "2">Software testing and verification</th>
+	</tr>
+    <tr>
+        <th colspan="2">Kinds of tests:</th>
+    </tr>
+    <tr>
+        <td colspan="2">
+        <ul>
+        <li>Acceptance testing:Verifying whether the whole system works as intended.</li>
+        <br>
+        <li>Integration testing: Ensuring that software components or functions operate together.</li>
+        <br>
+        <li>Unit testing:Validating that each software unit performs as expected. A unit is the smallest testable component of an application. </li>
+        <br>
+        <li>Functional testing: Checking functions by emulating business scenarios, based on functional requirements. Black-box testing is a common way to verify functions.</li>
+        <br>
+        <li>Performance testing: Testing how the software performs under different workloads. Load testing, for example, is used to evaluate performance under real-life load conditions.</li>
+        <br>
+        <li>Regression testing: Checking whether new features break or degrade functionality. Sanity testing can be used to verify menus, functions and commands at the surface level, when there is no time for a full regression test.</li>
+        <br>
+        <li>Stree testing: Testing how much strain the system can take before it fails. Considered to be a type of non-functional testing.</li>
+        <br>
+        <li>Usability testing: Validating how well a customer can use a system or web application to complete a task.</li>
+    
+    </ul>
+    </td>
+    </tr>
+
+    <tr>
+        <th colspan="2">Software testing is done to detect:</th>
+    </tr>
+    <tr>
+        <td colspan="2">
+        <ul>
+        <li>Architectural flaws</li>
+        <li>Poor design decisions</li>
+        <li>Invalid or incorrect functionality</li>
+        <li>Security Vulnerabilities</li>
+        <li>Scalability Issues</li>
+        </ul>
+        </td>
+    </tr>
+
+    <tr>
+        <th colspan="2">Testing best practices:</th>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <ul>
+                <li>Continuous testing: A DevOps approach that has development and operations working together from the start of a project to test software earlier in the process.</li>
+                <br>
+                <li>Configuration management: Organizations maintan test assets and track what software builds to test centrally. Teams get access to resources through user authentication and audit trails.</li>
+                <br>
+                <li>Service virtualization: Simulates the services and systems that are incomplete, allowing teams to test sooner. Allows testing flexibility.</li>
+                <br>
+                <li>Defect or "bug tracking" : Autonmated tools can be used to monitor defects and measure their scope.</li>
+                <br>
+                <li>Metrics and reporting: Enable teams to share status, goals and test results.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <th colspan="2"><a href="https://www.ibm.com/topics/software-testing">What is software testing?</a></th>
+    </tr>
+</table>
+
+</body>
+</html>
+	
+	
